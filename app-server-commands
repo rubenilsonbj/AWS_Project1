@@ -9,8 +9,10 @@
 
 #!/bin/bash
 sudo -su ec2-user
-sudo vi mysql
+sudo vi mysql # aqui e para cria um arquivo excutavel
 sudo chmod a+x mysql
+./mysql
+#########################################################################
 sudo wget https://dev.mysql.com/get/mysql80-community-release-el9-1.noarch.rpm
 sudo dnf install mysql80-community-release-el9-1.noarch.rpm -y
 sudo rpm --import https://repo.mysql.com/RPM-GPG-KEY-mysql-2023
