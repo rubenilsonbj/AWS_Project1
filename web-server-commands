@@ -13,7 +13,6 @@ cd /home/ec2-user
 # MODIFY BELOW CODE WITH YOUR S3 BUCKET NAME
 sudo aws s3 cp s3://<YOUR-S3-BUCKET-NAME>/application-code/web-tier web-tier --recursive
 sudo chown -R ec2-user:ec2-user /home/ec2-user/web-tier
-sudo chmod -R 755 /home/ec2-user/web-tier
 sudo chmod -R 755 /home/ec2-user
 
 # =========================================
